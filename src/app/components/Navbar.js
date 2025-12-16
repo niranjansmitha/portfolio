@@ -12,7 +12,7 @@ export default function Navbar() {
   item === "Resume" ? (
     <a
       key={item}
-      href="/resume.pdf"
+      href="/Resume.pdf"
       target="_blank"
       className="
         text-gray-300

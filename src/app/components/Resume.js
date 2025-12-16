@@ -8,7 +8,7 @@ export default function Resume() {
       </p>
 
       <a
-        href="/resume.pdf"
+        href="/Resume.pdf"
         target="_blank"
         className="inline-block px-8 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-300 transition"
       >
