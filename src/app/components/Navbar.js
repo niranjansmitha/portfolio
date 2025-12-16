@@ -8,25 +8,47 @@ export default function Navbar() {
 
       <div className="max-w-6xl mx-auto px-8 py-6 flex justify-center">
         <div className="flex gap-12 text-lg font-medium">
-          {["About", "Skills", "Projects", "Contact"].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="
-                text-gray-300
-                hover:text-cyan-400
-                transition-colors
-                relative
-                after:absolute after:left-0 after:-bottom-2
-                after:w-0 after:h-[2px]
-                after:bg-cyan-400
-                after:transition-all
-                hover:after:w-full
-              "
-            >
-              {item}
-            </a>
-          ))}
+          {["About", "Skills", "Projects", "Resume", "Contact"].map((item) =>
+  item === "Resume" ? (
+    <a
+      key={item}
+      href="/resume.pdf"
+      target="_blank"
+      className="
+        text-gray-300
+        hover:text-cyan-400
+        transition-colors
+        relative
+        after:absolute after:left-0 after:-bottom-2
+        after:w-0 after:h-[2px]
+        after:bg-cyan-400
+        after:transition-all
+        hover:after:w-full
+      "
+    >
+      Resume
+    </a>
+  ) : (
+    <a
+      key={item}
+      href={`#${item.toLowerCase()}`}
+      className="
+        text-gray-300
+        hover:text-cyan-400
+        transition-colors
+        relative
+        after:absolute after:left-0 after:-bottom-2
+        after:w-0 after:h-[2px]
+        after:bg-cyan-400
+        after:transition-all
+        hover:after:w-full
+      "
+    >
+      {item}
+    </a>
+  )
+)}
+
         </div>
       </div>
     </nav>
