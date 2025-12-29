@@ -1,5 +1,22 @@
 export default function Projects() {
   const projects = [
+        {
+      title: "Institutional-Grade Smart Order Flow Alpha Engine",
+      problem:
+        "Retail trading systems often ignore market microstructure, execution risk, and professional risk controls, leading to unstable performance.",
+      solution:
+        "Built a full research-to-execution quantitative trading system on BankNifty intraday data. Engineered microstructure features (price pressure, volatility, trend regime), trained an ML alpha model (XGBoost) with walk-forward validation, and designed a professional risk engine with volatility targeting, drawdown kill-switch, and regime cooldown. Final strategy achieved Sharpe 2.59 with 27% max drawdown.",
+      tech: [
+        "Python",
+        "Quantitative Finance",
+        "Machine Learning",
+        "XGBoost",
+        "Market Microstructure",
+        "Risk Engineering",
+        "Backtesting"
+      ],
+    },
+
     {
       title: "Trading Strategy Development (Forex – NY Session)",
       problem:

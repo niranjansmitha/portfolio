@@ -9,8 +9,7 @@ import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-b from-black via-gray-950 to-gray-900 text-white">
-
+    <main className="bg-gradient-to-b from-gray-950 via-black to-red-900 text-white min-h-screen"> 
       <Navbar />
       <Hero />
       <About />
